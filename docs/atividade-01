@@ -1,0 +1,25 @@
+# Atividade 01: Diagnóstico de Qualidade — Projeto Local Eats
+
+## 1. Problemas e Atributos de Qualidade (ISO/IEC 25010)
+
+| Problema Identificado | Atributo Afetado | Justificativa Técnica |
+| :--- | :--- | :--- |
+| Lentidão em horários de pico | Eficiência de Desempenho | O sistema apresenta problemas de comportamento temporal sob carga elevada. |
+| Telas confusas e pouco intuitivas | Usabilidade | Falha na operabilidade e na estética da interface, dificultando o uso. |
+| Buscas com resultados incorretos | Adequação Funcional | O software não cumpre a correção funcional esperada para a tarefa de busca. |
+| Falhas em modelos de celular específicos | Compatibilidade | Falta de adaptabilidade do sistema em diferentes hardwares e versões de SO. |
+| Avaliações sumindo após o refresh | Confiabilidade | Indica falhas na integridade da persistência de dados e maturidade do código. |
+| Inconsistência entre Web e Mobile | Usabilidade / Portabilidade | A falta de padrão visual entre as plataformas prejudica o aprendizado do usuário. |
+
+## 2. Diagnóstico Técnico
+
+### O sistema tem qualidade para operar?
+Não. O sistema possui falhas críticas em Adequação Funcional e Confiabilidade. Manter a operação atual gera risco à reputação do negócio e frustração constante aos usuários.
+
+### Priorização de Problemas
+1. **Dados e Funções Básicas:** Corrigir os erros de busca e a perda de dados nas avaliações (prioridade máxima).
+2. **Estabilidade e Performance:** Otimizar o sistema para suportar o pico de acessos do evento gastronômico.
+3. **Interface:** Padronizar a experiência entre web e mobile para melhorar a usabilidade.
+
+---
+Wesley Solisnasnde Santos Zorzolli - 13/03/2026
