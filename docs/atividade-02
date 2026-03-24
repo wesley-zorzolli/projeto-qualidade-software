@@ -1,0 +1,195 @@
+# Atividade 02: Estrutura de Qualidade da Startup Local Eats
+
+## 1. Diagnóstico da Situação Atual
+
+Na nossa análise, a Local Eats parece estar em um momento comum de startup: muita demanda por entrega rápida e pouco tempo para organizar o processo de qualidade.
+
+### 1.1 Papéis que provavelmente existem hoje
+- Desenvolvedor(a)
+- Analista de Sistemas (ou alguém de produto acumulando essa função)
+- Gerente de Produto (PM/PO)
+- Suporte/Atendimento, trazendo problemas dos usuários
+
+Pelo cenário, é bem possível que não exista QA dedicado, ou que essa função esteja dividida entre dev e produto.
+
+### 1.2 Quem está cuidando da qualidade hoje
+A qualidade parece estar sem dono claro. Na prática, os desenvolvedores acabam testando o básico e o restante só aparece em produção, quando cliente ou restaurante reporta problema.
+
+### 1.3 Problemas quando a responsabilidade não está clara
+- Funcionalidades com defeito chegam ao usuário final
+- Pedidos duplicados e inconsistência de dados
+- Mais retrabalho e atraso em novas entregas
+- Discussão entre áreas sobre quem deveria ter validado
+- Bugs sem histórico e sem priorização
+- Perda de confiança de clientes e restaurantes
+
+### 1.4 A qualidade é de uma pessoa ou da equipe?
+A qualidade precisa ser responsabilidade de todo o time. O QA ajuda a organizar e dar visibilidade dos riscos, mas qualidade não pode depender de uma única pessoa.
+
+---
+
+## 2. Proposta de Organização da Qualidade
+
+## 2.1 Definição de papéis da equipe
+
+### Papel: Desenvolvedor(a)
+Principais responsabilidades:
+- Implementar funcionalidades com preocupação técnica e testes
+- Criar testes unitários
+- Corrigir bugs priorizados no backlog
+
+Relação com qualidade:
+- Evitar defeito na origem, entregando código revisado e testável.
+
+### Papel: QA / Analista de Qualidade
+Principais responsabilidades:
+- Planejar e executar testes funcionais
+- Fazer testes exploratórios nos fluxos críticos
+- Registrar e acompanhar defeitos
+
+Relação com qualidade:
+- Organizar o processo de testes e antecipar risco antes da publicação.
+
+### Papel: Analista de Sistemas
+Principais responsabilidades:
+- Detalhar requisitos funcionais e não funcionais
+- Definir regras de negócio com clareza
+- Ajudar na validação com stakeholders
+
+Relação com qualidade:
+- Reduzir erro de interpretação e retrabalho por requisito mal definido.
+
+### Papel: DevOps
+Principais responsabilidades:
+- Manter pipeline de CI/CD com validações
+- Garantir estabilidade dos ambientes
+- Monitorar sistema em produção
+
+Relação com qualidade:
+- Aumentar confiabilidade de deploy e diminuir tempo de resposta a incidentes.
+
+### Papel: Product Manager / Product Owner
+Principais responsabilidades:
+- Priorizar backlog com base em valor e risco
+- Validar critérios de aceite
+- Equilibrar velocidade de entrega com qualidade
+
+Relação com qualidade:
+- Evitar que funcionalidades sejam liberadas sem critério mínimo de pronto.
+
+## 2.2 Responsabilidades relacionadas à qualidade
+
+| Atividade de Qualidade | Responsável Primário | Apoio |
+| :--- | :--- | :--- |
+| Revisar requisitos e critérios de aceite | Analista de Sistemas | PM, QA |
+| Planejar cenários de teste | QA | Analista, Dev |
+| Executar testes manuais de funcionalidades críticas | QA | Dev |
+| Criar e manter testes unitários | Desenvolvedor | QA |
+| Registrar e acompanhar bugs | QA | Todo o time |
+| Realizar code review | Desenvolvedor (pares) | Tech Lead |
+| Validar antes de produção | QA | PM, Analista |
+| Automatizar validações no pipeline | DevOps | Dev |
+| Monitorar erros e incidentes em produção | DevOps | Dev, QA |
+
+## 2.3 Práticas básicas de QA recomendadas
+
+1. Definir "Pronto" com critério de qualidade
+História só entra como concluída quando passar em testes, atender critérios e não ter bug crítico aberto.
+
+2. Regressão manual dos fluxos principais
+Antes de release, testar pelo menos o fluxo completo de pedido: escolha, pagamento, confirmação e recebimento pelo restaurante.
+
+3. Registro e triagem semanal de bugs
+Todos os defeitos precisam de severidade, responsável e prazo de correção.
+
+4. Code review obrigatório antes de merge
+Reduz erro lógico e melhora padronização do código.
+
+5. Checklist pós-release
+Após deploy, acompanhar indicadores básicos (erros, pedidos duplicados e falhas no checkout).
+
+---
+
+## 3. Anúncios de Contratação da Startup
+
+## 3.1 Vaga 1 - Analista de Qualidade de Software (QA)
+
+Informações do anúncio:
+- Empresa: Local Eats
+- Local: Porto Alegre - RS
+- Modelo: Híbrido
+
+Título da vaga:
+- Analista de Qualidade de Software (QA)
+
+Descrição da vaga:
+A Local Eats está contratando QA para apoiar a evolução da plataforma de pedidos. A pessoa vai trabalhar junto com desenvolvimento e produto para melhorar a confiabilidade das entregas e diminuir falhas em produção.
+
+Principais responsabilidades:
+- Planejar e executar testes funcionais
+- Realizar testes exploratórios
+- Abrir, documentar e acompanhar bugs
+- Apoiar critérios de aceite junto ao time
+- Validar funcionalidades antes da liberação
+
+Requisitos obrigatórios:
+- Conhecimento básico/intermediário em testes de software
+- Boa capacidade de documentação de defeitos
+- Noções de ciclo de desenvolvimento
+- Boa comunicação para trabalho em equipe
+
+Requisitos desejáveis:
+- Experiência com testes de aplicações web
+- Conhecimento de ferramentas de bugs
+- Noções de testes de API e automação
+- Conhecimento de Git
+
+Certificações ou cursos relevantes:
+- ISTQB CTFL (diferencial)
+- Cursos de testes funcionais e exploratórios
+
+## 3.2 Vaga 2 - Desenvolvedor(a) Full Stack
+
+Informações do anúncio:
+- Empresa: Local Eats
+- Local: Porto Alegre - RS
+- Modelo: Híbrido ou Remoto
+
+Título da vaga:
+- Desenvolvedor(a) Full Stack
+
+Descrição da vaga:
+A Local Eats busca Desenvolvedor(a) Full Stack para evoluir a plataforma de pedidos e corrigir pontos críticos de estabilidade. Espera-se colaboração com QA e foco em qualidade de entrega.
+
+Principais responsabilidades:
+- Desenvolver e manter funcionalidades front-end e back-end
+- Criar testes unitários
+- Corrigir bugs priorizados
+- Participar de code review
+- Apoiar melhorias de integração contínua
+
+Requisitos obrigatórios:
+- Experiência com desenvolvimento web
+- Conhecimento em APIs REST
+- Conhecimento em banco de dados relacional
+- Versionamento com Git
+- Noções de testes automatizados
+
+Requisitos desejáveis:
+- Experiência com microsserviços
+- Conhecimento de CI/CD
+- Noções de monitoramento de aplicação
+
+Certificações ou cursos relevantes:
+- Cursos de desenvolvimento web
+- Cursos de testes automatizados
+- Cursos de engenharia de software
+
+---
+
+## 4. Conclusão
+
+O principal ponto para a Local Eats é organizar papéis e rotina de qualidade. Com responsabilidades definidas e práticas simples, a tendência é reduzir defeitos em produção e aumentar a confiança de quem usa a plataforma.
+
+---
+Wesley Solisnande Santos Zorzolli - 24/03/2026
