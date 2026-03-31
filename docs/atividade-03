@@ -1,0 +1,107 @@
+# Atividade 03: Estratégia Inicial de Testes - LocalEats
+
+## 1. Funcionalidades principais
+
+A equipe priorizou as funcionalidades que mais impactam o uso diário da plataforma:
+
+- Busca de restaurantes (culinária, localização e faixa de preço)
+- Visualização de cardápio, fotos e avaliações
+- Cadastro e login
+- Favoritos
+- Recomendações personalizadas
+- Publicação de avaliações e comentários
+
+---
+
+## 2. Níveis de teste
+
+### Funcionalidade: Busca de restaurantes
+- Unitário: validar regras de filtro, ordenação e retorno correto dos dados.
+- Integração: validar comunicação entre API de busca, banco de dados e geolocalização.
+- Sistema: usuário aplica filtros e recebe restaurantes coerentes com os critérios.
+- Aceitação: usuário encontra opções relevantes com rapidez e confiança.
+
+### Funcionalidade: Visualização de cardápio, fotos e avaliações
+- Unitário: validar exibição de preço, itens de cardápio e nota média.
+- Integração: validar integração entre serviço de restaurantes, imagens e avaliações.
+- Sistema: usuário abre restaurante e visualiza todas as informações sem inconsistência.
+- Aceitação: usuário consegue comparar opções e decidir com segurança.
+
+### Funcionalidade: Cadastro e login
+- Unitário: validar campos obrigatórios, formato de e-mail e regra de senha.
+- Integração: validar autenticação com banco de usuários e geração de sessão/token.
+- Sistema: fluxo completo de cadastro, login e manutenção da sessão ativa.
+- Aceitação: usuário acessa o sistema sem erro e com perfil correto.
+
+### Funcionalidade: Favoritos
+- Unitário: validar adicionar/remover favorito e persistência correta.
+- Integração: validar sincronização de favoritos entre perfil do usuário e base de restaurantes.
+- Sistema: favorito salvo no mobile aparece no web (e vice-versa).
+- Aceitação: usuário monta e reutiliza sua lista pessoal de locais.
+
+### Funcionalidade: Recomendações personalizadas
+- Unitário: validar aplicação das regras de recomendação com base em preferências.
+- Integração: validar conexão entre histórico do usuário, motor de recomendação e catálogo.
+- Sistema: usuário recebe sugestões coerentes com seu perfil de uso.
+- Aceitação: usuário percebe recomendações úteis para escolha de restaurantes.
+
+### Funcionalidade: Publicação de avaliações e comentários
+- Unitário: validar nota permitida, texto obrigatório e regras de envio.
+- Integração: validar envio do front-end para API e persistência no banco.
+- Sistema: usuário publica avaliação e ela permanece após atualização da tela.
+- Aceitação: usuário compartilha experiência e encontra seu comentário publicado corretamente.
+
+---
+
+## 3. Prioridades e riscos
+
+### Alta prioridade
+- Busca de restaurantes
+- Cadastro e login
+- Publicação de avaliações e comentários
+- Visualização de cardápio, fotos e avaliações
+
+Justificativa:
+Essas funcionalidades sustentam o uso principal da plataforma. Se login falha, o usuário não acessa recursos pessoais. Se a busca retorna resultados incorretos, a proposta do sistema é comprometida. Se cardápios e avaliações aparecem errados, a decisão do usuário fica prejudicada e a reputação dos restaurantes é afetada. Além disso, o problema de avaliações que desaparecem já indica risco real de perda de confiança.
+
+### Média prioridade
+- Favoritos
+- Recomendações personalizadas
+
+Justificativa:
+São importantes para retenção e experiência, mas não bloqueiam totalmente o fluxo principal de uso.
+
+### Onde um erro causa maior impacto
+- Fluxo de autenticação e sessão (acesso)
+- Busca com filtros (encontrabilidade)
+- Persistência de avaliações (confiança e reputação)
+- Consistência entre web e mobile (experiência e suporte)
+
+---
+
+## 4. Pirâmide de testes
+
+- Maior foco: testes unitários
+- Foco intermediário: testes de integração
+- Menor foco: testes de sistema e aceitação end-to-end
+
+Justificativa:
+Testes unitários têm menor custo e rápida execução, então devem ser maioria para detectar regressões cedo. Testes de integração cobrem os principais riscos técnicos da LocalEats (serviços conectados, APIs e persistência). Testes E2E são mais caros e lentos, por isso devem ser concentrados nos fluxos críticos de negócio, como login, busca, abertura de restaurante e publicação de avaliação.
+
+---
+
+## 5. Testes em produção
+
+Sim, com controle e baixo risco operacional.
+
+Situações recomendadas:
+- Monitoramento contínuo de jornada crítica (login, busca, visualização e avaliação)
+- Canary release para liberar versões a uma pequena parcela de usuários
+- Feature flags para ativação gradual de funcionalidades
+- Observabilidade com alertas de erro, latência e comportamento por plataforma
+
+Justificativa:
+Alguns problemas só aparecem em ambiente real, principalmente sob carga alta e em variedade de dispositivos. O uso controlado de testes em produção ajuda a detectar falhas rapidamente sem impactar toda a base de usuários. Esse modelo complementa os testes anteriores e reduz risco de incidentes amplos.
+
+---
+Wesley Solisnande Santos Zorzolli - 30/03/2026
