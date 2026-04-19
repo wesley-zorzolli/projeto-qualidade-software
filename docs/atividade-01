@@ -1,8 +1,10 @@
 # Atividade 01: Diagnóstico de Qualidade — Projeto Local Eats
 
-## 1. Problemas e Atributos de Qualidade (ISO/IEC 25010)
+## 1. Problemas e Atributos de Qualidade (ISO/IEC 25000 / ISO/IEC 25010)
 
-| Problema Identificado | Atributo Afetado | Justificativa Técnica |
+Esta análise foi realizada com base na família de normas ISO/IEC 25000 (SQuaRE), utilizando o modelo ISO/IEC 25010 para identificar os atributos de qualidade afetados no produto.
+
+| Problema Identificado | Atributo Afetado (ISO/IEC 25010) | Justificativa Técnica |
 | :--- | :--- | :--- |
 | Lentidão em horários de pico | Eficiência de Desempenho | O sistema apresenta problemas de comportamento temporal sob carga elevada. |
 | Telas confusas e pouco intuitivas | Usabilidade | Falha na operabilidade e na estética da interface, dificultando o uso. |
