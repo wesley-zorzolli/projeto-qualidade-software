@@ -38,7 +38,7 @@ As análises de qualidade foram orientadas pela família de normas ISO/IEC 25000
   evidência de execução manual e registro dos resultados em `aula-06-planejamento-testes.md`.
   Observação: nesta versão o foco ficou em testes manuais; automação/TDD/BDD podem entrar como evolução.
 
-## Metodologia
+## 🧩 Metodologia
 Aprendizagem Baseada em Problemas (PBL), com foco no desenvolvimento das competências da disciplina.
 
 ---
