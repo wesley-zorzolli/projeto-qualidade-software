@@ -1,6 +1,6 @@
 # Projeto - Qualidade de Software
 
-## Integrantes
+## 👥 Integrantes
 - Wesley Solisnande Santos Zorzolli - 782410076
 
 ## 🎯 Objetivo do Repositório
@@ -13,10 +13,10 @@ Este repositório reúne as atividades que desenvolvi na disciplina de Qualidade
 ## 📦 Entregas
 As entregas estão organizadas no mesmo padrão apresentado em aula, mantendo os arquivos por atividade em `docs/` e os materiais de aula na raiz.
 
-## Referência de Qualidade
+## 🚨 Referência de Qualidade
 As análises de qualidade foram orientadas pela família de normas ISO/IEC 25000 (SQuaRE), com aplicação dos atributos do modelo ISO/IEC 25010 nas atividades diagnósticas.
 
-## Atividades do PBL avaliadas
+## 💻 Atividades do PBL Avaliativas
 
 | PBL | Entrega no repositório |
 | :--- | :--- |
@@ -26,7 +26,7 @@ As análises de qualidade foram orientadas pela família de normas ISO/IEC 25000
 | PBL 4 - Testes funcionais vs estruturais | `aula-05-testes-funcionais-estruturais.md` |
 | PBL 5 - Planejamento e execução de testes | `aula-06-planejamento-testes.md` |
 
-## Elementos de Competência (EC) evidenciados
+## ✨ Elementos de Competência (EC) evidenciados
 
 - EC1 - Compreender fundamentos de qualidade de software e aplicação no desenvolvimento:
   diagnóstico por atributos de qualidade e priorização de riscos em `docs/atividade-01`.
