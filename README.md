@@ -8,7 +8,9 @@ Este repositório reúne as atividades que desenvolvi na disciplina de Qualidade
 
 ## 📚 Organização
 - `docs/` -> atividades organizadas por entrega (`atividade-01`, `atividade-02` e `atividade-03`)
-- Arquivos `aula-XX` na raiz -> registros das aulas e entregas principais
+- `artefatos/` -> diagramas, relatorios e evidencias das atividades
+- `src/` -> codigo-fonte (quando aplicavel)
+- `referencias/` -> materiais de apoio 
 
 ## 📦 Entregas
 As entregas estão organizadas no mesmo padrão apresentado em aula, mantendo os arquivos por atividade em `docs/` e os materiais de aula na raiz.
