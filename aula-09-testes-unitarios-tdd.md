@@ -1,7 +1,7 @@
 # Aula 9 - Testes Unitarios Automatizados e TDD
 
 ## Integrante
-- Wesley Solisnande Santos Zorzolli - 782410076
+- Wesley Solisnande Santos Zorzolli
 
 ---
 
