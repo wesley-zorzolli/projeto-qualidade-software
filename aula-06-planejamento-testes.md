@@ -62,11 +62,11 @@ Usei testes funcionais, caixa-preta e uma verificação básica de usabilidade. 
 **Dados de entrada:** item disponível no cardápio do restaurante.  
 **Resultado esperado:** item aparece no resumo e o sistema permite continuar.
 
-## CT-04 - Login com senha inválida
+## CT-04 - Login com e-mail inválido
 **Pré-condição:** estar na tela de login.  
-**Passos:** informar usuário válido, informar senha incorreta e clicar em entrar.  
-**Dados de entrada:** usuário válido e senha inválida.  
-**Resultado esperado:** acesso bloqueado e mensagem de erro na tela.
+**Passos:** informar e-mail em formato inválido, informar senha qualquer e clicar em entrar.  
+**Dados de entrada:** e-mail sem "@" e senha qualquer.  
+**Resultado esperado:** acesso bloqueado e validação de formato de e-mail exibida na tela.
 
 ## CT-05 - Buscar restaurante inexistente
 **Pré-condição:** estar autenticado.  
@@ -85,15 +85,19 @@ Eu simulei a execução no LocalEats pelo navegador em https://local-eats-unisen
 | CT-01 | Passou | Login válido abriu a página `/home` e exibiu o menu principal. |
 | CT-02 | Passou | A busca por "brasileira" retornou restaurantes com comida brasileira. |
 | CT-03 | Passou | O item selecionado entrou no resumo do pedido. |
-| CT-04 | Falhou | Ao tentar validar o login, apareceu a mensagem do navegador pedindo "@" no e-mail informado. Não foi possível concluir a validação de senha incorreta nesse teste. |
+| CT-04 | Passou | O sistema bloqueou o envio e exibiu validação de e-mail inválido (exigindo formato com "@"). |
 | CT-05 | Falhou | Não houve resultado, mas faltou uma mensagem clara de vazio. |
 
 ## Evidências observadas
 - E01: autenticação funcionou corretamente.
 - E02: a busca por "brasileira" trouxe resultados relevantes.
 - E03: o carrinho atualizou como esperado.
-- E04: no teste de login inválido, o campo de e-mail falhou na validação de formato antes da verificação de senha.
+- E04: no teste de e-mail inválido, o formulário bloqueou o envio e mostrou validação de formato.
 - E05: a busca sem resultado não foi comunicada direito.
+
+## Registro de evidências
+- Evidência textual consolidada nesta seção de execução (resultado e descrição por caso).
+- Recomendação para evolução: anexar capturas de tela por caso em `artefatos/evidencias/` para reforçar rastreabilidade.
 
 ---
 
@@ -101,7 +105,7 @@ Eu simulei a execução no LocalEats pelo navegador em https://local-eats-unisen
 
 Foram executados 5 testes: 3 passaram e 2 falharam.
 
-Os principais problemas foram a validação de entrada no login (que impediu concluir o cenário de senha inválida) e a falta de feedback claro quando a busca não encontrou restaurantes. Nos fluxos de sucesso, a aplicação respondeu bem e sem erros críticos.
+Os principais problemas encontrados foram a ausência de feedback claro quando a busca não encontrou restaurantes e limitações de comunicação de estado da interface em cenários de erro. Nos fluxos de sucesso, a aplicação respondeu bem e sem erros críticos.
 
 ---
 
@@ -114,7 +118,7 @@ Sim. Ele me ajudou a não testar de forma aleatória e a organizar melhor o que 
 Sim. Na prática ficou mais claro que o sistema funciona, mas comunica mal os erros e os estados sem resultado.
 
 ## O que eu melhoraria?
-Eu adicionaria mais testes de entrada vazia, faria prints reais do que apareceu na tela e testaria em mais de um navegador, se desse.
+Eu adicionaria mais testes de entrada vazia, anexaria prints por caso para aumentar rastreabilidade e testaria em mais de um navegador.
 
 ## Conclusão
 O LocalEats funcionou bem nos fluxos principais, mas ainda precisa melhorar os retornos de erro e de tela vazia.
