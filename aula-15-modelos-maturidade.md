@@ -55,4 +55,6 @@ Por se tratar de um projeto individual, todo o processo depende exclusivamente d
 ## Conclusão
 Mesmo trabalhando sozinho é possível evoluir o processo com melhorias práticas e incrementais: automatizar testes básicos, usar o GitHub como backlog/registro e adicionar análise estática trazem disciplina e visibilidade sem exigir equipe extra. Pequenos passos contínuos reduzem riscos e tornam o projeto mais sustentável.
 
+---
+
 Wesley Solisnande Santos Zorzolli - 09 de junho de 2026
